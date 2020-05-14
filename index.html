@@ -11,37 +11,41 @@
     <p id="description">
       We are collecting data to create an AI that will save lifes
     </p>
-    <form id="survery-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" id="name-label" placeholder="Name" />
+    <form  id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" id="name-label" placeholder="Name" required />
       <br />
-      <label for="email" id="email-label">Email:</label>
-      <input type="email" id="email" placeholder="Email" />
+      <label for="email" id="email-label" >Email:</label>
+      <input type="email" id="email" placeholder="Email" required/>
       <br />
       <label for="number" id="number-label">Number:</label>
       <input type="number" id="number" min="0" max="10" placeholder="Number" />
       <br />
+      <br/>
       <label for="dropdown"> Gender: </label>
       <select id="dropdown">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
       <br />
-      <label for="status">Status:</label>
+      <br/>
+      <label for="status">Status:</label><br/>
       <input type="radio"  name="status" value="single">Single</input>
       <input type="radio"  name="status" value="married">Married</input>
       <input type="radio"  name="status" value="widowed">Widowed</input>
-      <br />
+      <br /><br/>
+      <div id="checkbox-container">
       <label for="kids">What gender are your kids?</label>
       <input type="checkbox" name="kids"value="female">Female</input>
       <input type="checkbox" name="kids"value="male">Male</input>
       <input type="checkbox" name="kids"value="no-kids">I dont have kids</input>
-      <br />
+      </div>
+      <br /><br/>
       <label for="comments">Additional Comments here:</label>
       <textarea placeholder="Additional Comments here" id="comments"> </textarea>
 
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit" id="submit">Submit</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

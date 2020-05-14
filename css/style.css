@@ -4,11 +4,17 @@
   box-sizing: border-box;
   text-align: center;
 }
+body {
+  background-color: #fefefe;
+}
 
+body > h1 {
+  margin: 3vh 0;
+}
 #survery-form {
   margin: 4vh 0;
 }
 
 input {
-  margin: 1vh 0;
+  margin: 2vh 0;
 }
